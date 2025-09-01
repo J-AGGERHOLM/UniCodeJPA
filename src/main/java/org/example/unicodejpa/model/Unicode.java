@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class unicode {
+public class Unicode {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,12 +27,14 @@ public class unicode {
         this.id = id;
     }
 
-    public int getUnicode() {
-        return unicode;
+    public int getUnicode(char c) {
+        int unicodeHolder = c;
+        return unicodeHolder;
     }
 
-    public void setUnicode(int unicode) {
-        this.unicode = unicode;
+    public void setUnicode(char c) {
+        int unicodeHolder = c;
+        this.unicode = unicodeHolder;
     }
 
     public char getLetter() {
